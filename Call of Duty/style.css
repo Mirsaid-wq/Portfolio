@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  padding: 0 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+  height: 100px;
+}
+header ul {
+  display: flex;
+  gap: 35px;
+  font-size: 20px;
+  color: black;
+}
+header li {
+  color: black;
+  font-weight: 400;
+}
+header button {
+  padding: 15px 28px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 13px;
+}
+header button:hover {
+  color: white;
+  background-color: gray;
+  font-size: 13px;
+  cursor: pointer;
+}
+.left h1 {
+  font-size: 50px;
+  width: 500px;
+}
+.left p {
+  margin-top: 20px;
+  width: 500px;
+}
+.hero {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.left button {
+  margin-top: 20px;
+  padding: 15px 28px;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.img {
+  height: 600px;
+  background-size: cover;
+  background-image: url("https://t3.ftcdn.net/jpg/07/87/96/22/360_F_787962217_WB6mN2KysPsIFDMRdk46C4hTVvh2dtEj.jpg");
+}
+.purchase h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+.purchase p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card {
+  width: 230px;
+  height: 250px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px gray;
+}
+.pencil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 52px;
+}
+.left button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  border: 2px solid white;
+}
+.zone {
+  margin-top: 120px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.war {
+  font-size: 20px;
+  font-weight: bold;
+}
+.war h1 {
+  font-size: 40pt;
+}
+.zone img {
+  width: 450px;
+}
+.zone1 img {
+  width: 450px;
+}
+.zone1 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  width: 1240px;
+  height: 400px;
+  background-color: #101010;
+}
+.r ul {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #a1a8b7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 90px;
+}
+.r {
+  gap: 150px;
+}
+.r ul li:nth-child(1) {
+  color: white;
+}
+.ng {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+.fd h3 {
+  color: white;
+}
+.fd p {
+  color: gray;
+}
+.fd {
+  margin-top: 20px;
+  border-top: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+input::placeholder {
+  color: black;
+}
+input {
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.ng {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.r {
+  display: flex;
+}
+.r li {
+  margin-top: 10px;
+}
+footer {
+  margin-top: 50px;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ad Container Styling */
+.ad-container {
+  background-color: #101010;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Fade-in and slide-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title Styling */
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  animation: fadeInText 1.5s ease-out;
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInText 2s ease-out 0.5s forwards;
+}
+
+/* Image Styling */
+.ad-image {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: zoomIn 1s ease-out 1s forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  background-color: #ff7f50;
+  color: white;
+  font-size: 22px;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInButton 2s ease-out 1.5s forwards;
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cta-button:hover {
+  background-color: #ff6347;
+}

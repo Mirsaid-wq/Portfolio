@@ -1,0 +1,155 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex; /* Flexbox applied to header */
+  justify-content: center; /* Centers the nav list horizontally */
+  align-items: center; /* Aligns items vertically */
+  height: 100px;
+}
+
+ul {
+  display: flex; /* Flexbox applied to the list */
+  gap: 130px; /* Spacing between list items */
+}
+
+li {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+a {
+  color: inherit; /* Inherits text color from parent */
+  text-decoration: none; /* Removes underline */
+}
+.hero h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the advertisement */
+.ad-container {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 1.5s forwards; /* Fade-in animation */
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Image Slide-in from the left */
+.ad-image {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Heading Slide-up */
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: slideUp 1s ease-out 0.5s forwards; /* Delay for smooth animation */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Paragraph Fade-in */
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInText 1s ease-out 1s forwards; /* Delay for smooth animation */
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Call-to-action button */
+.cta-button {
+  background-color: #ff9900;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeInButton 1s ease-out 1.5s forwards; /* Fade-in with delay */
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cta-button:hover {
+  background-color: #e68a00;
+}

@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+header {
+    height: 80px;
+    background-color:white;
+    color: black solid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+button{
+    color:#ffffff;
+    width: Hug (156px)px;
+height: Hug (41px)px;
+top: 24px;
+left: 1172px;
+padding: 12px 24px 12px 24px;
+gap: 10px;
+border-radius: 6px 0px 0px 0px;
+opacity: 0px;
+ background-color: #101010
+ 
+}
+ h3 {
+font-size: 30px;
+font-family: "Poppins", sans-serif;
+
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    
+}
+span {
+    width: 537px;
+    height: 81px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+        color: #636f87;
+        font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+.men {
+    text-align: center;
+    font-size: 40px;
+}
+.red {
+    text-align: center;
+}
+h2 {
+    width: 445px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 78.4px;
+    text-align: left;
+     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start
+}
+.learn {
+    width: (168px);
+height:  (59px);
+padding: 20px 40px 20px 40px;
+gap: 10px;
+border-radius: 6px 0px 0px 0px;
+opacity: 0px;
+background-color: #1AAB7A;
+display: flex;
+justify-content: end;
+align-items: center;
+flex-direction: row;
+}
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+iframe {
+    margin-top: 10px;
+    border-radius: 10px;
+}
+button:hover {
+border-radius: 20px;
+}
+.learn:hover {
+    background-color: lightgreen;
+    border: 10px;
+}
+.derfc  h3{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600px;
+   text-align: center;
+}
+
+.verd {
+    width: 354px;
+height: 328px;
+top: 140px;
+left: 112px;
+gap: 0px;
+border-radius: 6px 0px 0px 0px;
+opacity: 0px;
+border-radius: 5px;
+display: flex;
+flex-direction: column;
+}
+.verd h4 {    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+
+
+}
+.verd:hover {
+    background-color: #1AAB7A;
+}
+.verd p {
+    width: 324px;
+height: 135px;
+top: 105px;
+left: 30px;
+gap: 0px;
+opacity: 0px;
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+
+}
+.fesr {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.try {
+    display: flex;
+flex-direction: column;
+}
+.try u {
+    font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 28px;
+margin-right: 220px;
+margin-bottom: 10px;
+}
+.wes {
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+   
+}
+.fvre {
+ margin-top: 20px;
+    margin-right: 20px;
+    gap: 50px;
+}
+.ner img {
+    width: 488px;
+height: 390px;
+top: 2045px;
+left: 112px;
+gap: 0px;
+border-radius: 6px 0px 0px 0px;
+opacity: 0px;
+}
+.bme h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 600px;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 100px;
+}
+.menu p {
+    width: 454px;
+height: 67px;
+top: 2247px;
+left: 916px;
+gap: 0px;
+opacity: 0.7px;
+
+font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+
+
+}
+.menu h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    text-align: left;
+      
+}
+
+.xer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+}
+.sent {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+.q {
+    width: 1008px;
+height: 455px;
+border-radius: 6px 0px 0px 0px;
+background: #F2F4F6;
+}
+.w {
+    display: flex;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+.q ul {
+    display: flex;
+    flex-direction: column;
+ text-align: center;
+ font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 25px;
+    gap: 80px;
+    font-weight: 700px;
+    margin-top: 50px;
+}
+
+.q button{
+    padding: 41px 19px;
+    top: 344px;
+    left: 414px;
+    padding: 20px 40px 20px 40px;
+    gap: 10px;
+    border-radius: 6px 0px 0px 0px;
+    opacity: 0px;
+    
+background-color:#1AAB7A;
+
+}
+.q {
+    display: flex;
+    flex-direction: column;
+ text-align: center;
+}
+.q p {
+    color: gray;
+    font-family: "Plus Jakarta Sans", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: center;
+
+}
+.e:hover {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+footer {
+    width: 1140px;
+height: 500px;
+background-color: #101010;
+}
+.r  ul{
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+text-align: left;
+font-family: "Plus Jakarta Sans", sans-serif;
+color: #a1a8b7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 90px;
+
+}
+.r {
+    gap: 150px;
+}
+.r ul li:nth-child(1) {
+    color: white;
+}
+.ng {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.fd h3 {
+    color: white;
+}
+.fd p {
+    color: gray;
+}
+.fd {
+    margin-top: 10px;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input::placeholder {
+    color: black;
+}
+input {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

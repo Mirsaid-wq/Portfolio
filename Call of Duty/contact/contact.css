@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Body Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+li {
+  color: black;
+  font-size: 20px;
+}
+a {
+  color: black;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+/* Container */
+.container {
+  padding: 0 30px;
+  width: 100%;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* Link Styling */
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+  padding: 8px 15px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Animation: Color Shift and Scale */
+.nav-links a:hover {
+  color: #ff9500; /* Vibrant orange color */
+  transform: scale(1.1); /* Slight scale effect */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Animation for Text Shadow */
+.nav-links a:hover {
+  text-shadow: 0 0 10px rgba(255, 149, 0, 0.8); /* Glow effect */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+input {
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px black solid;
+}
+.hero {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input::placeholder {
+  color: black;
+}
+input:hover {
+  border: 3px white solid;
+}
+.hero ul {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.hero li {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+.btn button {
+  padding: 15px 25px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.btn {
+  gap: 30px;
+}
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
