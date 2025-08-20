@@ -22,18 +22,19 @@
   <body>
     <header class="header">
       <a href="#" class="logo">Portfolio</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#" style="--i: 2">About</a>
-        <a href="#" style="--i: 3">Skills</a>
-        <a href="#" style="--i: 4">Portfolio</a>
-        <a href="#" style="--i: 5">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Portfolio</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section class="home">
+      <section class="home" id="home">
         <div class="home-content">
           <h3>Hi, It's me</h3>
           <h1>Sagdiyev Mirsaid</h1>
@@ -48,24 +49,25 @@
           </p>
 
           <div class="home-sci">
-            <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
-            <a href="#" style="--i: 7"><i class="bx bxl-tiktok"></i></a>
-            <a href="#" style="--i: 8"><i class="bx bxl-instagram"></i></a>
-            <a href="#" style="--i: 9"><i class="bx bxl-whatsapp"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-tiktok"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-whatsapp"></i></a>
           </div>
 
           <a href="#" class="btn">More about me</a>
         </div>
       </section>
-      <section class="about">
+
+      <section class="about" id="about">
         <div class="about-img">
           <img
-            src="./196c516cb1f4a01275fcca7071e19edb.jpg "
+            src="./196c516cb1f4a01275fcca7071e19edb.jpg"
             alt="Profile Image"
           />
         </div>
         <div class="about-text">
-          <h2><span>About</span>Me</h2>
+          <h2><span>About</span> Me</h2>
           <h3>Full Stack Developer!</h3>
           <p>
             I am a skilled web designer with over 3 years of experience in the
@@ -77,7 +79,8 @@
           <a href="#" class="btn">More About Me</a>
         </div>
       </section>
-      <section class="services">
+
+      <section class="services" id="services">
         <h2 class="s">My <span>Services</span></h2>
         <div class="services-container">
           <div class="service-box">
@@ -112,7 +115,8 @@
           </div>
         </div>
       </section>
-      <section class="project-me">
+
+      <section class="project-me" id="projects">
         <h2 style="color: white">
           Latest <span style="color: cyan">Project</span>
         </h2>
@@ -141,17 +145,10 @@
               />
             </a>
           </div>
-          <div class="project">
-            <a href="">
-              <img
-                src="https://e0.pxfuel.com/wallpapers/293/1015/desktop-wallpaper-travel-background-travel-16k-ultra-beach.jpg"
-                alt=""
-              />
-            </a>
-          </div>
         </div>
       </section>
-      <section class="contact">
+
+      <section class="contact" id="contact">
         <div class="contact-info">
           <h2>Contact <span style="color: cyan">Me</span></h2>
           <p>
@@ -168,20 +165,71 @@
           </div>
         </div>
         <div class="contact-form">
-          <form>
-            <input type="text" placeholder="Enter Your Name" required />
-            <input type="email" placeholder="Enter Your Email" required />
-            <input type="text" placeholder="Enter Your Subject" required />
-            <textarea
-              placeholder="Enter Your Message"
-              rows="5"
-              required
-            ></textarea>
-            <button type="submit">Submit</button>
-          </form>
+          <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+              />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+          <script>
+            // ✅ Your fixed EmailJS script
+            emailjs.init("koFFqsHXCMyqGtvWJ");
+
+            document
+              .getElementById("contact-form")
+              .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                emailjs
+                  .sendForm("service_y2oy10k", "template_s07d4ct", this)
+                  .then(
+                    () => {
+                      alert("Message sent successfully!");
+                      this.reset();
+                    },
+                    (error) => {
+                      alert("Failed to send: " + JSON.stringify(error));
+                    }
+                  );
+              });
+          </script>
         </div>
       </section>
     </main>
-    <script src="app.js"></script>
+
+    <script>
+      let menuIcon = document.querySelector("#menu-icon");
+      let navbar = document.querySelector(".navbar");
+
+      menuIcon.onclick = () => {
+        menuIcon.classList.toggle("bx-x");
+        navbar.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>
