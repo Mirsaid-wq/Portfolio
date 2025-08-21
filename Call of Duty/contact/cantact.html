@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../contact/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
+    <!-- Header -->
     <header class="container">
       <nav>
         <ul class="nav-links">
@@ -17,30 +22,41 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Hero / Contact Form -->
     <main>
       <section class="hero">
-        <div class="all">
-          <div>
-            <ul>
-              <li>Your name</li>
-              <li>Your name</li>
-              <li>Your email</li>
-            </ul>
+        <div class="form-container">
+          <h2>Contact Us</h2>
+          <p>Fill out the form and we’ll get back to you soon!</p>
+          <div class="all">
+            <div class="labels">
+              <label for="name">Your First Name</label>
+              <label for="lastname">Your Last Name</label>
+              <label for="email">Your Email</label>
+            </div>
+            <div class="inputs">
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your first name"
+              />
+              <input
+                type="text"
+                id="lastname"
+                placeholder="Enter your last name"
+              />
+              <input type="email" id="email" placeholder="example@gmail.com" />
+            </div>
           </div>
-          <div class="email">
-            <input type="text" name="1" id="1" placeholder="Enter your name?" />
-            <input type="tel" name="2" id="2" placeholder="Enter your 2 name" />
-            <input
-              type="email"
-              name="3"
-              id="3"
-              placeholder="..........@gmail.com"
-            />
+          <div class="btn">
+            <button class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Submit
+            </button>
+            <button class="reset-btn">
+              <i class="fas fa-rotate-left"></i> Reset
+            </button>
           </div>
-        </div>
-        <div class="btn">
-          <button><a href="../index.html">Submit</a></button>
-          <button>Reapet</button>
         </div>
       </section>
     </main>
