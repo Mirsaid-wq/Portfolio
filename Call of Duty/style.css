@@ -1,214 +1,370 @@
-/* Reset */
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+  font-family: "Arial", sans-serif;
 }
-
 body {
-  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
   line-height: 1.6;
 }
-
-/* Container */
 .container {
-  padding: 0 20px;
+  width: 90%;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* Header */
 header {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 20px 0;
-  flex-wrap: wrap;
+  border-bottom: 1px solid #333;
 }
-
 header h1 {
-  font-size: 24px;
+  color: #ff0000;
+  font-size: 2rem;
 }
-
-header ul {
+.nav ul {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 18px;
+  gap: 15px;
+  list-style: none;
+  transition: max-height 0.3s ease;
 }
-
-header button {
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav ul li a:hover {
+  color: #ff0000;
+}
+.btn-main {
   padding: 10px 20px;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  font-size: 14px;
+  background: #ff0000;
   border: none;
+  color: #fff;
+  border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.btn-main:hover {
+  background: #cc0000;
 }
 
-/* Hero Section */
-.hero {
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.left h1 {
-  font-size: 32px;
-  max-width: 100%;
-}
-
-.left p {
-  margin-top: 15px;
-  max-width: 100%;
-}
-
-.left button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background-color: transparent;
+/* Hamburger */
+.hamburger {
+  display: none;
   cursor: pointer;
-  border: 2px solid black;
+  font-size: 1.8rem;
+  color: #fff;
 }
-
-iframe {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Image Hero Background */
-.img {
-  min-height: 300px;
-  background-size: cover;
-  background-position: center;
-}
-
-/* Purchase / Cards */
-.purchase h2 {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 26px;
-}
-
-.purchase p {
-  margin-top: 10px;
-  text-align: center;
-  font-size: 18px;
-}
-
-.pencil {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.card {
-  width: 100%;
-  max-width: 250px;
-  padding: 15px;
-  border: 1px solid black;
+.nav.active ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  gap: 15px;
+  background: #111;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
 }
 
-/* Sections Zone */
-.zone,
-.zone1 {
-  margin-top: 60px;
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+}
+.hero-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.hero-left h2 {
+  color: #ff0000;
+  font-size: 2rem;
+}
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #cc0000;
+}
+.btn-secondary {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-secondary:hover {
+  background: #555;
+}
+.hero-video {
+  flex: 1 1 300px;
+}
+.hero-video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* Purchase / Weapons */
+.purchase .ad-content {
+  text-align: center;
+  margin: 40px 0;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #ff0000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.cta-button:hover {
+  background: #cc0000;
+}
+.weapon-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}
+.card img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Zone */
+.zone {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   align-items: center;
-  justify-content: center;
-  text-align: center;
+  margin: 40px 0;
 }
-
-.zone img,
-.zone1 img {
-  max-width: 100%;
-  height: auto;
+.zone img {
+  flex: 1 1 300px;
+  max-width: 400px;
+  border-radius: 10px;
+}
+.war-content {
+  flex: 2 1 400px;
+}
+.war-content h2 {
+  color: #ff0000;
+  margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
-  width: 100%;
-  padding: 40px 20px;
-  background-color: #101010;
-  margin-top: 40px;
-  color: white;
+  background: #111;
+  padding: 40px 0 20px;
+  color: #ccc;
+  text-align: center;
 }
-
-.ng {
+.footer-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   gap: 40px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer-links h4 {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+.footer-links ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-links ul li a:hover {
+  color: #ff0000;
+}
+.btn-footer {
+  padding: 10px 25px;
+  background: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+.btn-footer:hover {
+  background: #cc0000;
+}
+footer .copyright {
+  border-top: 1px solid #333;
+  padding-top: 15px;
 }
 
-.r ul {
-  color: #a1a8b7;
-}
-
-.r ul li:nth-child(1) {
-  color: white;
-  font-weight: bold;
-}
-
-.fd {
-  margin-top: 30px;
-  border-top: 1px solid gray;
-  padding-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 992px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-video iframe {
+    height: 250px;
   }
-  header {
-    justify-content: center;
+  .zone img {
+    max-width: 350px;
   }
 }
 
 @media (max-width: 768px) {
-  header ul {
-    gap: 10px;
-    font-size: 16px;
+  .hero {
+    flex-direction: column;
+    text-align: center;
   }
-  .left h1 {
-    font-size: 26px;
+  .zone {
+    flex-direction: column;
+    text-align: center;
+  }
+  .war-content {
+    flex: 1 1 100%;
+  }
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hamburger {
+    display: block;
   }
 }
 
 @media (max-width: 480px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
   }
-  .fd {
+  .hero-buttons {
     flex-direction: column;
-    gap: 10px;
+  }
+  .weapon-cards {
+    grid-template-columns: 1fr;
+  }
+  .zone img {
+    max-width: 100%;
+  }
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px; /* adds space from left/right edges */
+}
+
+.hero-left {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 50px; /* prevents text from touching edges */
+}
+
+.hero-left h2 {
+  color: #ff0000;
+  font-size: 2rem;
+}
+
+.hero-left p {
+  margin-bottom: 15px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.hero-video {
+  flex: 1 1 300px;
+  padding: 0 15px; /* prevents video from touching edges */
+}
+
+.hero-video iframe {
+  width: 100%;
+  height: 320px;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
     text-align: center;
   }
-  .cta-button {
-    font-size: 18px;
-    padding: 10px 20px;
+  .hero-left,
+  .hero-video {
+    padding: 0 10px;
   }
+  .hero-video iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left h2 {
+    font-size: 1.5rem;
+  }
+  .hero-video iframe {
+    height: 200px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+.war-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-left: 10%;
 }

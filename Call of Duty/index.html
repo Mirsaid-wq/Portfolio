@@ -4,158 +4,170 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Call of Duty</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-    <div class="img">
-        <header class="container">
-            <h1>Call of Duty</h1>
-            <div>
-              <ul>
-                <a href="./index.html"><li>Home</li></a>
-                <a href="./About us/home.html"><li>About us</li></a>
-                <a href="./game/game.html"><li>About game</li></a>
-                <a href="./contact/cantact.html"><li>Contact</li></a>
-              </ul>
-            </div>
-            <button onclick="oyna()">Dowland Now</button>
-          </header>
-            <section class="hero container">
-              <div class="left">
-                <h1>Call of Duty Mobile and War Zone</h1>
-                <p>
-                  Call of Duty is a military first-person shooter video game series
-                  and media franchise published by Activision, starting in 2003. The
-                  games were first developed by Infinity Ward, then by Treyarch and
-                  Sledgehammer Games. Several spin-off and handheld games were made by
-                  other developers. The most recent, Call of Duty: Black Ops 6, was
-                  released on October 25, 2024.
-                </p>
-                <div>
-                  <button class="b1">Contact</button>
-                  <button class="b2">Dowland</button>
-                </div>
-              </div>
-              <iframe
-                width="503"
-                height="300"
-                src="https://www.youtube.com/embed/gGgGBJOh7a4"
-                title="The Last Good Call Of Duty"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-            </section>
-    </div>
-   <main>
-    <section class="purchase container">
-      <div class="ad-container">
-        <div class="ad-content">
-          <h1>Experience War Like Never Before</h1>
-          <p>Get ready to immerse yourself in the action with *Call of Duty*. Stunning graphics, thrilling campaigns, and exciting multiplayer modes await.</p>
-          
-          <a href="https://www.callofduty.com/" class="cta-button">Join the Battle Now</a>
-        </div>
-      </div>
-      <h2>The different type of weapons</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates vitae perspiciatis repellat neque sapiente?</p>
-      <div class="pencil">
-          <div class="card">
-              <img width="200" src="./images/icon_cac_weapon_ar_akilo47.webp" alt="">
-              <h3>Ak-47</h3>
-              <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="pencil">
-              <div class="card">
-                  <img width="200" src="./images/Ump45_menu_icon_MW3.webp" alt="">
-                  <h3>UMP-45</h3>
-                  <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-              <div class="pencil">
-                  <div class="card">
-                      <img width="200" src="./images/M-590_Menu_Icon.webp" alt="">
-                      <h3>M5-90</h3>
-                      <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
-                  <div class="pencil">
-                      <div class="card">
-                          <img width="200" src="./images/Menu_mp_weapons_l96a1.webp" alt="">
-                          <h3>L96A1</h3>
-                          <p>Lorem ipsum dolor sit amet.</p>
-                      </div>
+    <!-- Header -->
+    <header class="container header">
+      <h1>Call of Duty</h1>
+
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
       </div>
 
-  </section>
-  <section class="zone container">
-    <img width="300" height="250" src="https://i.ebayimg.com/images/g/bfIAAOSwRMxkkBrF/s-l1200.jpg" alt="">
-    <div class="war">
-      <h1>Call of Duty:Warzone</h1>
-       <p>Competitive games like Call of Duty: Warzone demand maximum frame rates <br> and the lowest system latency. Get the competitive edge you need by playing <br> at 144 frames per second (FPS) or more with the world's fastest GPUs <br> powered by NVIDIA® GeForce®.</p>
-    </div>
-  </section>
-  <section class="zone1 container">
-    <img width="300" height="250" src="https://wallpaperaccess.com/full/1470805.jpg" alt="">
-    <div class="war">
-      <h1>Call of Duty:Mobile</h1>
-       <p>Competitive games like Call of Duty: Warzone demand maximum frame rates <br>
-        and the lowest system latency. Get the competitive edge you need by playing <br>
-        at 144 frames per second (FPS) or more with the world's fastest GPUs <br>
-        powered by NVIDIA® GeForce®.</p>
-    </div>
-  </section>
-   </main>
-   <footer class="container">
-       
-    <div class="ng">
-        <div class="r">
-            <ul>
-                <li>Services</li>
-                <li>SMM</li>
-                <li>Web development</li>
-                <li>Mobile apps</li>
-                <li>Branding</li>
-                <li>Graphic design</li>
-            </ul>
-            <ul>
-                <li>Resources</li>
-                <li>About us</li>
-                <li>Showcase</li>
-                <li>Blog</li>
-            </ul>
+      <nav class="nav" id="nav-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./About us/home.html">About us</a></li>
+          <li><a href="./game/game.html">About game</a></li>
+          <li><a href="./contact/cantact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button onclick="oyna()" class="btn-main">Download Now</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="hero-left">
+        <h2>Call of Duty Mobile and War Zone</h2>
+        <p>
+          Call of Duty is a military first-person shooter video game series and
+          media franchise published by Activision. Latest: Black Ops 6, October
+          25, 2024.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-secondary">Contact</button>
+          <button class="btn-primary">Download</button>
         </div>
-        <div class="r">
-            <ul >
-                <li>Connect with us</li>
-                <li>    (239) 555-0108</li>
-                <li>hello@callofduty.com</li>
-                <li>4140 Parker Rd. Allentown, New Mexico 
-                    <br>31134</li>
-            </ul>
+      </div>
+      <div class="hero-video">
+        <iframe
+          src="https://www.youtube.com/embed/gGgGBJOh7a4?autoplay=1&mute=1"
+          title="The Last Good Call Of Duty"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Types of Weapons Section -->
+    <section class="purchase container">
+      <div class="ad-content">
+        <h2>Experience War Like Never Before</h2>
+        <p>
+          Get ready to immerse yourself in the action with Call of Duty.
+          Stunning graphics, thrilling campaigns, and exciting multiplayer modes
+          await.
+        </p>
+        <a href="https://www.callofduty.com/" class="cta-button"
+          >Join the Battle Now</a
+        >
+      </div>
+
+      <h2>The Different Types of Weapons</h2>
+      <div class="weapon-cards">
+        <div class="card">
+          <img src="./images/icon_cac_weapon_ar_akilo47.webp" alt="Ak-47" />
+          <h3>Ak-47</h3>
+          <p>Reliable and powerful assault rifle.</p>
         </div>
-      
-    </div>
-     
-        <div class="fd">
-            <h3>Call of Duty</h3>
-            <p>Copyright © 2022 shooter</p>
+        <div class="card">
+          <img src="./images/Ump45_menu_icon_MW3.webp" alt="UMP-45" />
+          <h3>UMP-45</h3>
+          <p>Compact submachine gun for close combat.</p>
         </div>
-     
+        <div class="card">
+          <img src="./images/M-590_Menu_Icon.webp" alt="M5-90" />
+          <h3>M5-90</h3>
+          <p>Shotgun for maximum impact.</p>
+        </div>
+        <div class="card">
+          <img src="./images/Menu_mp_weapons_l96a1.webp" alt="L96A1" />
+          <h3>L96A1</h3>
+          <p>Sniper rifle for long-range targets.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zone Sections -->
+    <section class="zone container">
+      <div class="war-content">
+        <h2>Call of Duty: Warzone</h2>
+        <p>
+          Competitive games like Warzone demand maximum frame rates and low
+          system latency. Gain the edge with top GPUs powered by NVIDIA®
+          GeForce®.
+        </p>
+      </div>
+    </section>
+
+    <section class="zone container">
+      <div class="war-content">
+        <h2>Call of Duty: Mobile</h2>
+        <p>
+          Play anywhere with competitive performance and low latency. Get the
+          edge with high FPS and optimized mobile controls.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container footer">
+      <div class="footer-links">
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li>SMM</li>
+            <li>Web Development</li>
+            <li>Mobile Apps</li>
+            <li>Branding</li>
+            <li>Graphic Design</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Showcase</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>(239) 555-0108</li>
+            <li>hello@callofduty.com</li>
+            <li>4140 Parker Rd. Allentown, NM 31134</li>
+          </ul>
+        </div>
+      </div>
+
+      <button
+        class="btn-footer"
+        onclick="window.location.href='https://your-portfolio-link.com'"
+      >
+        Back to Portfolio
+      </button>
+      <p class="copyright">© 2022 Call of Duty. All Rights Reserved.</p>
     </footer>
+
     <script>
-      function oyna () {
-        window.open("https://www.youtube.com/@ognevoy-val")
-        console.log(window) 
+      function oyna() {
+        window.open("https://www.youtube.com/@ognevoy-val");
       }
+
+      // Hamburger toggle
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("nav-menu");
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
     </script>
   </body>
-  
 </html>
