@@ -442,5 +442,13 @@ footer {
   height: 100px;
 }
 .btn_2 {
-  padding: 20px 10px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6b6b;
+  color: black;
+}
+.btn_2 a {
+  color: black;
 }

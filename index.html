@@ -9,7 +9,7 @@
     />
     <title>Portfolio | Sagdiyev Mirsaid</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -21,9 +21,8 @@
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#" class="logo">Sagdiyev Mirsaid</a>
       <i class="bx bx-menu" id="menu-icon"></i>
-
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
@@ -34,11 +33,11 @@
     </header>
 
     <main>
-      <section class="home" id="home">
+      <section class="home-section" id="home">
         <div class="home-content">
           <h3>Hi, It's me</h3>
           <h1>Sagdiyev Mirsaid</h1>
-          <h3>And I am a <span class="text"></span></h3>
+          <h3>And I am a <span class="typed-text"></span></h3>
           <p>
             Hello! My name is Mirsaid Sagdiyev. I was born in 2011, and I am
             currently trying myself as a Frontend developer. As a student at
@@ -47,23 +46,27 @@
             in the field of programming and gain new experiences. Soon, I plan
             to develop further and achieve my goals.
           </p>
-
-          <div class="home-sci">
+          <div class="social-links">
             <a href="#"><i class="bx bxl-facebook"></i></a>
             <a href="#"><i class="bx bxl-tiktok"></i></a>
             <a href="#"><i class="bx bxl-instagram"></i></a>
             <a href="#"><i class="bx bxl-whatsapp"></i></a>
           </div>
-
-          <a href="#" class="btn">More about me</a>
+          <a href="#" class="btn primary-btn">More about me</a>
+        </div>
+        <div class="home-image">
+          <img
+            src="./196c516cb1f4a01275fcca7071e19edb.jpg"
+            alt="Sagdiyev Mirsaid Profile"
+          />
         </div>
       </section>
 
-      <section class="about" id="about">
-        <div class="about-img">
+      <section class="about-section" id="about">
+        <div class="home-image">
           <img
             src="./196c516cb1f4a01275fcca7071e19edb.jpg"
-            alt="Profile Image"
+            alt="Sagdiyev Mirsaid Profile"
           />
         </div>
         <div class="about-text">
@@ -76,153 +79,135 @@
             staying up-to-date with current design trends and leveraging my
             creativity to produce visually appealing and user-friendly websites.
           </p>
-          <a href="#" class="btn">More About Me</a>
+          <a href="#" class="btn primary-btn">More About Me</a>
         </div>
       </section>
 
-      <section class="services" id="services">
-        <h2 class="s">My <span>Services</span></h2>
+      <section class="services-section" id="services">
+        <h2>My <span>Services</span></h2>
         <div class="services-container">
           <div class="service-box">
-            <i class="icon">&lt;/&gt;</i>
+            <i class="bx bx-code-alt"></i>
             <h3>HTML</h3>
             <p>
               It is our skeleton to making web site we are using last html
               version: HTML5. For making site we are using different tags for
               improving or site and making more detailed
             </p>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#" class="btn secondary-btn">Learn More</a>
           </div>
           <div class="service-box">
-            <i class="icon">📐</i>
-            <h3>CSS and Taillwind CSS</h3>
+            <i class="bx bxs-palette"></i>
+            <h3>CSS and Tailwind CSS</h3>
             <p>
               The Css it is library where we are creating design for our web
               site and taillwind it is too library but it is mor comfortable to
               write design
             </p>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#" class="btn secondary-btn">Learn More</a>
           </div>
           <div class="service-box">
-            <i class="icon">🍏</i>
+            <i class="bx bxl-javascript"></i>
             <h3>Java Script</h3>
             <p>
               It is main library for making our web site to work and we are
               using Java Script like our body's exercise. So every web site used
               Java Script for making it more interactive, dynamic
             </p>
-            <a href="#" class="btn">Learn More</a>
+            <a href="#" class="btn secondary-btn">Learn More</a>
           </div>
         </div>
       </section>
 
-      <section class="project-me" id="projects">
-        <h2 style="color: white">
-          Latest <span style="color: cyan">Project</span>
-        </h2>
+      <section class="projects-section" id="projects">
+        <h2>Latest <span>Projects</span></h2>
         <div class="projects-container">
-          <div class="project">
+          <div class="project-card">
             <a href="./Call of Duty/index.html">
               <img
                 src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ke/KEXFV6CGSWKX1729870190181.jpg"
-                alt="Project 1"
+                alt="Call of Duty Project"
               />
             </a>
           </div>
-          <div class="project">
-            <a href="./Mortal kombat/index.html">
-              <img
-                src="https://wallpapercat.com/w/full/a/c/d/462349-3840x2160-desktop-4k-sub-zero-mortal-kombat-background.jpg"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="project">
+
+          <div class="project-card">
             <a href="./Pixar/index.html">
               <img
                 src="https://e0.pxfuel.com/wallpapers/293/1015/desktop-wallpaper-travel-background-travel-16k-ultra-beach.jpg"
-                alt=""
+                alt="Pixar Project"
               />
             </a>
           </div>
         </div>
       </section>
 
-      <section class="contact" id="contact">
+      <section class="contact-section" id="contact">
         <div class="contact-info">
-          <h2>Contact <span style="color: cyan">Me</span></h2>
+          <h2>Contact <span>Me</span></h2>
           <p>
             Let's work together! Feel free to reach out to me for collaborations
             or project discussions.
           </p>
-          <p><span class="icon">📧</span> mirsaid57@gmail.com</p>
-          <p><span class="icon">📞</span>(+998) 88 155 73 07</p>
+          <div class="contact-details">
+            <p><i class="bx bxl-gmail"></i> mirsaid57@gmail.com</p>
+            <p><i class="bx bxs-phone"></i> (+998) 88 155 73 07</p>
+          </div>
           <div class="social-icons">
-            <a href="#">🌐</a>
-            <a href="#">💼</a>
-            <a href="#">📸</a>
-            <a href="#">📘</a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-facebook-circle"></i></a>
           </div>
         </div>
-        <div class="contact-form">
-          <div class="contact-container">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-              <input
-                type="text"
-                name="user_name"
-                placeholder="Your Name"
-                required
-              />
-              <input
-                type="email"
-                name="user_email"
-                placeholder="Your Email"
-                required
-              />
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-              />
-              <textarea
-                name="message"
-                placeholder="Your Message"
-                required
-              ></textarea>
-              <button type="submit">Send</button>
-            </form>
-          </div>
-
-          <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-          <script>
-            // ✅ Your fixed EmailJS script
-            emailjs.init("koFFqsHXCMyqGtvWJ");
-
-            document
-              .getElementById("contact-form")
-              .addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                emailjs
-                  .sendForm("service_y2oy10k", "template_s07d4ct", this)
-                  .then(
-                    () => {
-                      alert("Message sent successfully!");
-                      this.reset();
-                    },
-                    (error) => {
-                      alert("Failed to send: " + JSON.stringify(error));
-                    }
-                  );
-              });
-          </script>
+        <div class="contact-form-container">
+          <form id="contact-form">
+            <input
+              type="text"
+              name="user_name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your Email"
+              required
+            />
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
 
+    <footer class="footer">
+      <p>&copy; 2024 Sagdiyev Mirsaid. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
+      emailjs.init("koFFqsHXCMyqGtvWJ");
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          emailjs.sendForm("service_y2oy10k", "template_s07d4ct", this).then(
+            () => {
+              alert("Message sent successfully!");
+              this.reset();
+            },
+            (error) => {
+              alert("Failed to send: " + JSON.stringify(error));
+            }
+          );
+        });
+
       let menuIcon = document.querySelector("#menu-icon");
       let navbar = document.querySelector(".navbar");
 
@@ -230,6 +215,14 @@
         menuIcon.classList.toggle("bx-x");
         navbar.classList.toggle("active");
       };
+
+      var typed = new Typed(".typed-text", {
+        strings: ["Frontend Developer", "Web Designer", "Programmer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      });
     </script>
   </body>
 </html>
